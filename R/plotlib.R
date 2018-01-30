@@ -577,10 +577,10 @@ ggbiplot <- function(plot.data, loadings.data = NULL,
                                             yend = loadings.columns[2L])
     loadings.data[, 1L:2L] <- loadings.data[, 1L:2L] * scaler * 0.8
 
-    p <- p + geom_segment(data = loadings.data,
-                          mapping = loadings.mapping,
-                          arrow = grid::arrow(length = grid::unit(8, 'points')),
-                          colour = loadings.colour)
+#    p <- p + geom_segment(data = loadings.data,
+#                          mapping = loadings.mapping,
+#                          arrow = grid::arrow(length = grid::unit(8, 'points')),
+#                          colour = loadings.colour)
     p <- plot_label(p = p, data = loadings.data, label = loadings.label,
                     label.label = loadings.label.label,
                     label.colour = loadings.label.colour,
